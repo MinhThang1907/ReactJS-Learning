@@ -1,6 +1,6 @@
-// import { DownOutlined } from "@ant-design/icons";
+import { DownOutlined } from "@ant-design/icons";
 import { nav } from "../../category";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
 // import { Dropdown, MenuProps } from "antd";
@@ -51,6 +51,11 @@ export const Nav = () => {
           </span>
         </li>
       </Dropdown> */}
+      <li key="more">
+          <span className="block cursor-pointer py-1.5 px-3 text-center text-[#ca5c3b] hover:text-[#b14a2b] font-medium">
+            More <DownOutlined />
+          </span>
+        </li>
     </ul>
   );
 };

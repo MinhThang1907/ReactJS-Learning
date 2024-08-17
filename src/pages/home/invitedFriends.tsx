@@ -1,5 +1,4 @@
 // import { Table } from "antd";
-import React from "react";
 // import { invitedFriendsColumns } from "./columns/invitedFriends";
 
 const InvitedFriends = () => {

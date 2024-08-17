@@ -1,7 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import routes from "./routes";
 import { useEffect, useState } from "react";
-import React from "react";
+import { Header } from "./layouts/header";
+import { Footer } from "./layouts/footer";
 
 function App() {
   const [width, setWidth] = useState<number>(window.innerWidth);
@@ -15,11 +16,15 @@ function App() {
   }, []);
 
   return (
-    <Routes>
-      {routes.map((route) => (
-        <Route key={route.path} path={route.path} element={route.element} />
-      ))}
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        {routes.map((route) => (
+          <Route key={route.path} path={route.path} element={route.element} />
+        ))}
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
