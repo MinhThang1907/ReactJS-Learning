@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import React from "react";
 import { useState } from "react";
 
 export const Switch = () => {

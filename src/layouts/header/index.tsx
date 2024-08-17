@@ -1,6 +1,7 @@
 import { Nav } from "./nav";
 import logo from "../../assets/logos/logo.svg";
 import { Switch } from "./switch";
+import React from "react";
 
 export const Header = () => {
   return (
