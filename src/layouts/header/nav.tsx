@@ -1,5 +1,5 @@
 import { DownOutlined } from "@ant-design/icons";
-import { nav } from "@/category";
+import { nav } from "../../category";
 import React, { useEffect, useState } from "react";
 import clsx from "clsx";
 import { Link } from "react-router-dom";

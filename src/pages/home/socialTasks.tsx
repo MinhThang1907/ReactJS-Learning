@@ -1,10 +1,10 @@
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
-import { DefaultButton } from "@/components/buttons";
+import { DefaultButton } from "../../components/buttons";
 import React, { useState } from "react";
-import { SocialCard } from "@/components/cards";
-import XLogo from "@/assets/logos/Xblack.svg";
-import DiscordLogo from "@/assets/logos/discord.svg";
+import { SocialCard } from "../../components/cards";
+import XLogo from "../../assets/logos/Xblack.svg";
+import DiscordLogo from "../../assets/logos/discord.svg";
 
 const SocialTasks = () => {
   const [isClickConnect, setIsClickConnect] = useState<boolean>(false);

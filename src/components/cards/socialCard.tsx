@@ -1,8 +1,8 @@
 import React from "react";
-import Heart from "@/assets/logos/heart.svg";
-import Ball from "@/assets/logos/ball.svg";
-import Paw from "@/assets/logos/paw.svg";
-import Fishbone from "@/assets/logos/fishbone.svg";
+import Heart from "../../assets/logos/heart.svg";
+import Ball from "../../assets/logos/ball.svg";
+import Paw from "../../assets/logos/paw.svg";
+import Fishbone from "../../assets/logos/fishbone.svg";
 import { DefaultButton } from "../buttons";
 
 interface SocialCardProps {

@@ -1,6 +1,5 @@
 import clsx from "clsx";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export const Switch = () => {
   const [isMainnet, setIsMainnet] = useState<boolean>(true);

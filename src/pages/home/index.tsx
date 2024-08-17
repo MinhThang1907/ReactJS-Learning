@@ -2,7 +2,7 @@ import React from "react";
 import SocialTasks from "./socialTasks";
 import ReferralCampaign from "./referralCampaign";
 import InvitedFriends from "./invitedFriends";
-import Footprint from "@/assets/icons/footprint.svg";
+import Footprint from "../../assets/icons/footprint.svg";
 
 const Home = () => {
   return (

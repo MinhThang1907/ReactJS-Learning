@@ -1,5 +1,5 @@
 import React from "react";
-import Xwhite from "@/assets/logos/Xwhite.svg";
+import Xwhite from "../../assets/logos/Xwhite.svg";
 
 export const Footer = () => {
   return (
