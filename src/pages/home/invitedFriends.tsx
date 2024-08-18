@@ -1,5 +1,5 @@
-// import { Table } from "antd";
-// import { invitedFriendsColumns } from "./columns/invitedFriends";
+import { Table } from "antd";
+import { invitedFriendsColumns } from "./columns/invitedFriends";
 
 const InvitedFriends = () => {
   return (
@@ -8,10 +8,10 @@ const InvitedFriends = () => {
         <h1 className="flex justify-start items-start text-2xl font-medium">
           Invited friends
         </h1>
-        {/* <Table
+        <Table
           columns={invitedFriendsColumns}
           className="mt-5 border-2 border-[#EEC5E7] rounded-xl"
-        /> */}
+        />
       </div>
     </div>
   );
