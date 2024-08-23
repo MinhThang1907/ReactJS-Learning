@@ -9,7 +9,7 @@ function App() {
   const [width, setWidth] = useState<number>(window.innerWidth);
   const getUserByAddress = async () => {
     try {
-      const data = await HomeAPI.getUser("string");
+      const data = await HomeAPI.getUserByAddress("minhthang");
       console.log(data);
     } catch (error) {
       console.error(error);
