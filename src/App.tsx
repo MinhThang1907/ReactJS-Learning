@@ -1,18 +1,23 @@
 import { Route, Routes } from "react-router-dom";
-import routes from "./routes";
+import routes from "@/routes";
 import { useEffect, useState } from "react";
-import { Header } from "./layouts/header";
-import { Footer } from "./layouts/footer";
+import { Header } from "@/layouts/header";
+import { Footer } from "@/layouts/footer";
+import { HomeAPI } from "./services/homeService.js";
 
 function App() {
   const [width, setWidth] = useState<number>(window.innerWidth);
+  const getUserByAddress = async () => {
+    try {
+      const data = await HomeAPI.getUser("string");
+      console.log(data);
+    } catch (error) {
+      console.error(error);
+    }
+  }
   useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-      console.log(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    // console.log("-1")
+    // getUserByAddress();
   }, []);
 
   return (
